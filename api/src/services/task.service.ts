@@ -5,7 +5,7 @@ import { Task } from "src/models/task";
 export class TaskService {
   async getTask(): Promise<Task> {
     const task: Task = {
-      id: 1,
+      id: '1',
       description: 'desc',
       name: 'task1,'
     };
