@@ -23,6 +23,6 @@ export class TaskService {
     return await this.taskRepository.updateTask(task);
   }
   async deleteTask(id: string) {
-    return await this.taskRepository.removeTask(id);
+    return await this.taskRepository.deleteTask(id);
   }
 }

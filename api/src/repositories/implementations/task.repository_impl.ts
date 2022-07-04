@@ -56,7 +56,7 @@ export class TaskRepositoryImpl implements TaskRepository {
       name: updateTask.name,
     });
   }
-  async removeTask(id: string): Promise<void> {
+  async deleteTask(id: string): Promise<void> {
     this._db.doc(`tasks/${id}`).delete();
   }
 }
